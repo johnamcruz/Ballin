@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Balln.Pages;
+using Xamarin.Forms;
 
 namespace Balln
 {
@@ -8,7 +9,7 @@ namespace Balln
         {
             InitializeComponent();
 
-            MainPage = new BallnPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()
