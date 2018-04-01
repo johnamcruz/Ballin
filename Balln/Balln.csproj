@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
+    <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
