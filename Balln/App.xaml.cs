@@ -1,4 +1,6 @@
-﻿using Balln.Pages;
+﻿using Balln.PageModels;
+using Balln.Pages;
+using FreshMvvm;
 using Xamarin.Forms;
 
 namespace Balln
@@ -9,7 +11,10 @@ namespace Balln
         {
             InitializeComponent();
 
-            MainPage = new HomePage();
+            var tabbedNavigation = new FreshTabbedNavigationContainer();
+            tabbedNavigation.AddTab<HomePageModel>("Courts", null);
+            tabbedNavigation.AddTab<ProfilePageModel>("Profile", null);
+            MainPage = tabbedNavigation;
         }
 
         protected override void OnStart()
