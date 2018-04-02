@@ -9,9 +9,11 @@
         <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddCommand}" />
     </ContentPage.ToolbarItems>
     <StackLayout Spacing="0">
-        <controls:SegmentedTabControl 
+        <controls:SegmentedTabControl
             Margin="10"
             HeightRequest="36"
+            SelectedSegmentTextColor="White"
+            UnselectedSegmentTextColor="{x:Static constants:Colors.Grey}"
             UnselectedSegmentBackgroundColor="{x:Static constants:Colors.DarkGrey}" 
             TintColor="{x:Static constants:Colors.Grey}" 
             SelectedSegment="0">
@@ -20,8 +22,22 @@
             <Label Text="All" />
           </controls:SegmentedTabControl.Children>
         </controls:SegmentedTabControl>
-        <ListView>
-            
+        <ListView 
+            HasUnevenRows="true"
+            ItemsSource="{Binding Games}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <AbsoluteLayout Margin="16,10,10,10" HeightRequest="62">
+                            <Label Text="{Binding Name}" TextColor="White" AbsoluteLayout.LayoutFlags="YProportional" AbsoluteLayout.LayoutBounds="0,0,-1,-1" />
+                            <Label Text="{Binding Date}" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1"/>
+                            <Label Text="by" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.4,1,-1,-1"/>
+                            <Label Text="{Binding InvitedBy}" TextColor="{x:Static constants:Colors.Green}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.6,1,-1,-1"/>
+                            <Image Source="{x:Static constants:Images.ArrowForward}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1,0.5,-1,-1"/>
+                        </AbsoluteLayout>    
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>

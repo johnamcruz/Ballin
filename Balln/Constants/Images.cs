@@ -9,5 +9,10 @@ namespace Balln.Constants
         public const string ProfileTab = "tab_profile";
 
         public const string IconAdd = "icon_add";
+
+        public const string ArrowForward = "arrow_forward";
+        public const string ArrowBack = "arrow_back";
+
+        public const string ImageProfile = "profile_basketball";
     }
 }

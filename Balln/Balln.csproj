@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="ViewModels\GameViewModel.cs" />
     <Compile Include="Controls\SegmentedTabControl.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
