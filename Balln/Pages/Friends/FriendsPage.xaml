@@ -10,7 +10,7 @@
             ItemsSource="{Binding Friends}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell IsEnabled="false">
                         <AbsoluteLayout Margin="16,10,10,10" HeightRequest="62">
                             <Image Source="{Binding ProfileImage}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0.5,-1,-1"/>
                             <Label Text="{Binding NickName}" TextColor="White" HorizontalTextAlignment="Start" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.2,0.1,-1,-1"/>

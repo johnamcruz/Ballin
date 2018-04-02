@@ -6,7 +6,7 @@
     xmlns:controls="clr-namespace:Balln.Controls;assembly=Balln"
     x:Class="Balln.Pages.Games.GamesPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddCommand}" />
+        <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddNewGameCommand}" />
     </ContentPage.ToolbarItems>
     <StackLayout Spacing="0">
         <controls:SegmentedTabControl
@@ -27,8 +27,11 @@
             ItemsSource="{Binding Games}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell IsEnabled="false">
                         <AbsoluteLayout Margin="16,10,10,10" HeightRequest="62">
+                            <AbsoluteLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenDetailCommand}" />
+                            </AbsoluteLayout.GestureRecognizers>
                             <Label Text="{Binding Name}" TextColor="White" AbsoluteLayout.LayoutFlags="YProportional" AbsoluteLayout.LayoutBounds="0,0,-1,-1" />
                             <Label Text="{Binding Date}" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1"/>
                             <Label Text="by" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.4,1,-1,-1"/>

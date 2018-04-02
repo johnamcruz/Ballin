@@ -43,6 +43,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Games\GameDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Games\AddNewGamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -69,6 +77,14 @@
     </Compile>
     <Compile Include="Pages\Profile\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageModels\Games\GameDetailPageModel.cs" />
+    <Compile Include="Pages\Games\GameDetailPage.xaml.cs">
+      <DependentUpon>GameDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageModels\Games\AddNewGamePageModel.cs" />
+    <Compile Include="Pages\Games\AddNewGamePage.xaml.cs">
+      <DependentUpon>AddNewGamePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
