@@ -3,10 +3,25 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
+    xmlns:controls="clr-namespace:Balln.Controls;assembly=Balln"
     x:Class="Balln.Pages.GamesPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddCommand}" />
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout Spacing="0">
+        <controls:SegmentedTabControl 
+            Margin="10"
+            HeightRequest="36"
+            UnselectedSegmentBackgroundColor="{x:Static constants:Colors.DarkGrey}" 
+            TintColor="{x:Static constants:Colors.Grey}" 
+            SelectedSegment="0">
+          <controls:SegmentedTabControl.Children>
+            <Label Text="This Week" />
+            <Label Text="All" />
+          </controls:SegmentedTabControl.Children>
+        </controls:SegmentedTabControl>
+        <ListView>
+            
+        </ListView>
+    </StackLayout>
 </ContentPage>

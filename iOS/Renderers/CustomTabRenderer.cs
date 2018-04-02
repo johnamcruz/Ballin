@@ -10,11 +10,13 @@ namespace Balln.iOS.Renderers
 {
     public class CustomTabRenderer : TabbedRenderer
     {
+        const int MaxTabItems = 3;
+
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
 
-            var size = new CoreGraphics.CGSize(TabBar.Frame.Width / 4, TabBar.Frame.Height);
+            var size = new CoreGraphics.CGSize(TabBar.Frame.Width / MaxTabItems, TabBar.Frame.Height);
             UITabBar.Appearance.SelectionIndicatorImage = new UIImage().MakeImageWithColorAndSize(Colors.DarkGreen.ToUIColor(), size);
 
             foreach (var item in TabBar?.Items)

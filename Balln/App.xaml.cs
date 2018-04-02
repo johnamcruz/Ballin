@@ -13,8 +13,7 @@ namespace Balln
             InitializeComponent();
 
             var tabbedNavigation = new FreshTabbedNavigationContainer();
-            tabbedNavigation.AddTab<CourtPageModel>("Courts", Images.CourtsTab);
-            tabbedNavigation.AddTab<GamesPageModel>("Games", Images.GamesTab);
+            tabbedNavigation.AddTab<GamesPageModel>("Games", Images.CourtsTab);
             tabbedNavigation.AddTab<FriendsPageModel>("Friends", Images.FriendsTab);
             tabbedNavigation.AddTab<ProfilePageModel>("Profile", Images.ProfileTab);
             MainPage = tabbedNavigation;

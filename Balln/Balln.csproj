@@ -67,6 +67,8 @@
     <Compile Include="Pages\CourtPage.xaml.cs">
       <DependentUpon>CourtPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\GameViewModel.cs" />
+    <Compile Include="Controls\SegmentedTabControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
