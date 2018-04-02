@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Balln.Pages
+namespace Balln.Pages.Friends
 {
-    public partial class GamesPage : ContentPage
+    public partial class FriendsPage : ContentPage
     {
-        public GamesPage()
+        public FriendsPage()
         {
             InitializeComponent();
         }

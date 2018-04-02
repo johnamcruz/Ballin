@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Balln.ViewModels;
 using FreshMvvm;
 
-namespace Balln.PageModels
+namespace Balln.PageModels.Games
 {
     public class GamesPageModel : FreshBasePageModel
     {

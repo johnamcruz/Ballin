@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Balln.ViewModels;
 using Balln.Constants;
 
-namespace Balln.PageModels
+namespace Balln.PageModels.Friends
 {
     public class FriendsPageModel : FreshBasePageModel
     {

@@ -1,5 +1,6 @@
-﻿using Balln.PageModels;
-using Balln.Pages;
+﻿using Balln.PageModels.Games;
+using Balln.PageModels.Friends;
+using Balln.PageModels.Profile;
 using Balln.Constants;
 using FreshMvvm;
 using Xamarin.Forms;

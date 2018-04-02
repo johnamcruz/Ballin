@@ -27,19 +27,19 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="Pages\ProfilePage.xaml">
+    <EmbeddedResource Include="Pages\Games\GamesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\GamesPage.xaml">
+    <EmbeddedResource Include="Pages\Friends\FriendsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\FriendsPage.xaml">
+    <EmbeddedResource Include="Pages\Courts\CourtPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\CourtPage.xaml">
+    <EmbeddedResource Include="Pages\Profile\ProfilePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -49,27 +49,27 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\ProfilePage.xaml.cs">
-      <DependentUpon>ProfilePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageModels\ProfilePageModel.cs" />
     <Compile Include="Constants\Images.cs" />
     <Compile Include="Constants\Colors.cs" />
-    <Compile Include="Pages\GamesPage.xaml.cs">
-      <DependentUpon>GamesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\FriendsPage.xaml.cs">
-      <DependentUpon>FriendsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PageModels\GamesPageModel.cs" />
-    <Compile Include="PageModels\FriendsPageModel.cs" />
-    <Compile Include="PageModels\CourtPageModel.cs" />
-    <Compile Include="Pages\CourtPage.xaml.cs">
-      <DependentUpon>CourtPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\GameViewModel.cs" />
     <Compile Include="Controls\SegmentedTabControl.cs" />
     <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="PageModels\Profile\ProfilePageModel.cs" />
+    <Compile Include="PageModels\Games\GamesPageModel.cs" />
+    <Compile Include="PageModels\Friends\FriendsPageModel.cs" />
+    <Compile Include="PageModels\Courts\CourtPageModel.cs" />
+    <Compile Include="Pages\Games\GamesPage.xaml.cs">
+      <DependentUpon>GamesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Friends\FriendsPage.xaml.cs">
+      <DependentUpon>FriendsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Courts\CourtPage.xaml.cs">
+      <DependentUpon>CourtPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Profile\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
@@ -84,6 +84,14 @@
     <Folder Include="Services\" />
     <Folder Include="Controls\" />
     <Folder Include="Constants\" />
+    <Folder Include="PageModels\Courts\" />
+    <Folder Include="PageModels\Games\" />
+    <Folder Include="PageModels\Friends\" />
+    <Folder Include="PageModels\Profile\" />
+    <Folder Include="Pages\Courts\" />
+    <Folder Include="Pages\Friends\" />
+    <Folder Include="Pages\Games\" />
+    <Folder Include="Pages\Profile\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

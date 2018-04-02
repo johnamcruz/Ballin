@@ -1,7 +1,7 @@
 ﻿using FreshMvvm;
 using Balln.Constants;
 
-namespace Balln.PageModels
+namespace Balln.PageModels.Profile
 {
     public class ProfilePageModel : FreshBasePageModel
     {

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Balln.Pages
+namespace Balln.Pages.Courts
 {
-    public partial class ProfilePage : ContentPage
+    public partial class CourtPage : ContentPage
     {
-        public ProfilePage()
+        public CourtPage()
         {
             InitializeComponent();
         }
