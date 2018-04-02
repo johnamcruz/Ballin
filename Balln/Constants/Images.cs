@@ -9,6 +9,7 @@ namespace Balln.Constants
         public const string ProfileTab = "tab_profile";
 
         public const string IconAdd = "icon_add";
+        public const string IconSettings = "icon_edit";
 
         public const string ArrowForward = "arrow_forward";
         public const string ArrowBack = "arrow_back";

@@ -252,6 +252,11 @@ namespace Balln.Controls
                     label.BackgroundColor = TintColor;
                     label.TextColor = SelectedSegmentTextColor;
                 }
+                else 
+                {
+                    label.BackgroundColor = UnselectedSegmentBackgroundColor;
+                    label.TextColor = UnselectedSegmentTextColor;
+                }
 
                 SetColumn(label, currentCount);
             }
