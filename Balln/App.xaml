@@ -1,6 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Balln.App">
+<?xml version="1.0" encoding="utf-8"?>
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
+    x:Class="Balln.App">
     <Application.Resources>
         <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="{x:Static constants:Colors.DarkGrey}" />
+            </Style>
+            <Style TargetType="TabbedPage" ApplyToDerivedTypes="True">
+                <Setter Property="BarBackgroundColor" Value="{x:Static constants:Colors.Green}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+                <Setter Property="BarBackgroundColor" Value="{x:Static constants:Colors.Orange}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

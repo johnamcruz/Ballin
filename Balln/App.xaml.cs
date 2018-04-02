@@ -1,5 +1,6 @@
 ﻿using Balln.PageModels;
 using Balln.Pages;
+using Balln.Constants;
 using FreshMvvm;
 using Xamarin.Forms;
 
@@ -12,8 +13,10 @@ namespace Balln
             InitializeComponent();
 
             var tabbedNavigation = new FreshTabbedNavigationContainer();
-            tabbedNavigation.AddTab<HomePageModel>("Courts", null);
-            tabbedNavigation.AddTab<ProfilePageModel>("Profile", null);
+            tabbedNavigation.AddTab<CourtPageModel>("Courts", Images.CourtsTab);
+            tabbedNavigation.AddTab<GamesPageModel>("Games", Images.GamesTab);
+            tabbedNavigation.AddTab<FriendsPageModel>("Friends", Images.FriendsTab);
+            tabbedNavigation.AddTab<ProfilePageModel>("Profile", Images.ProfileTab);
             MainPage = tabbedNavigation;
         }
 

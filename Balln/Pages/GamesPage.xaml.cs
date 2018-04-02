@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Balln.Pages
 {
-    public partial class HomePage : ContentPage
+    public partial class GamesPage : ContentPage
     {
-        public HomePage()
+        public GamesPage()
         {
             InitializeComponent();
         }
