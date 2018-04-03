@@ -6,5 +6,9 @@ namespace Balln.ViewModels
         public string Name { get; set; }
         public string Date { get; set; }
         public string InvitedBy { get; set; }
+
+        public int GoingCount { get; set; }
+        public int MaybeCount { get; set; }
+        public int InvitedCount { get; set; }
     }
 }

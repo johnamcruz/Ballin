@@ -23,25 +23,37 @@ namespace Balln.PageModels.Games
                 {
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
-                    InvitedBy = "johnamcruz"
+                    InvitedBy = "johnamcruz",
+                    GoingCount = 10,
+                    MaybeCount = 2,
+                    InvitedCount = 20
                 },
                 new GameViewModel
                 {
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
-                    InvitedBy = "johnamcruz"
+                    InvitedBy = "johnamcruz",
+                    GoingCount = 10,
+                    MaybeCount = 2,
+                    InvitedCount = 20
                 },
                 new GameViewModel
                 {
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
-                    InvitedBy = "johnamcruz"
+                    InvitedBy = "johnamcruz",
+                    GoingCount = 10,
+                    MaybeCount = 2,
+                    InvitedCount = 20
                 },
                 new GameViewModel
                 {
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
-                    InvitedBy = "johnamcruz"
+                    InvitedBy = "johnamcruz",
+                    GoingCount = 10,
+                    MaybeCount = 2,
+                    InvitedCount = 20
                 },
             };
         }

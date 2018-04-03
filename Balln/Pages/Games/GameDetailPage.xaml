@@ -4,8 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
     x:Class="Balln.Pages.Games.GameDetailPage">
-    <StackLayout>
+    <StackLayout Spacing="0">
         <Label Text="{Binding Game.Name}" TextColor="White" HorizontalTextAlignment="Center" Margin="0,5" />
         <Label Text="{Binding Game.InvitedBy}" TextColor="{x:Static constants:Colors.Grey}" HorizontalTextAlignment="Center" Margin="0,0,0,10" />
+        <BoxView BackgroundColor="{x:Static constants:Colors.Grey}" HeightRequest="1" Margin="10,0" />
+        <AbsoluteLayout HeightRequest="40" Margin="15,15,15,5">
+            <Label Text="{Binding Game.GoingCount}" TextColor="White" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0,-1,-1"/>
+            <Label Text="Going" TextColor="{x:Static constants:Colors.Grey}" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1"/>
+            <Label Text="{Binding Game.MaybeCount}" TextColor="White" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0,-1,-1"/>
+            <Label Text="Maybe" TextColor="{x:Static constants:Colors.Grey}" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,-1,-1"/>
+            <Label Text="{Binding Game.InvitedCount}" TextColor="White" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1,0,-1,-1"/>
+            <Label Text="Invited" TextColor="{x:Static constants:Colors.Grey}" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1,1,-1,-1"/>
+        </AbsoluteLayout>
+        <Button Text="invite more friends" TextColor="{x:Static constants:Colors.Green}" />
+        <BoxView BackgroundColor="{x:Static constants:Colors.Grey}" HeightRequest="1" Margin="10,0" />
     </StackLayout>
 </ContentPage>
