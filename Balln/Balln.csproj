@@ -51,6 +51,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Friends\FriendProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -86,6 +90,10 @@
     <Compile Include="Pages\Games\AddNewGamePage.xaml.cs">
       <DependentUpon>AddNewGamePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Friends\FriendProfilePage.xaml.cs">
+      <DependentUpon>FriendProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageModels\Friends\FriendProfilePageModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />

@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
     xmlns:controls="clr-namespace:Balln.Controls;assembly=Balln"
-    x:Class="Balln.Pages.Games.GamesPage">
+    x:Class="Balln.Pages.Games.GamesPage"
+    x:Name="page">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddNewGameCommand}" />
     </ContentPage.ToolbarItems>
@@ -27,10 +28,10 @@
             ItemsSource="{Binding Games}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell IsEnabled="false">
+                    <ViewCell>
                         <AbsoluteLayout Margin="16,10,10,10" HeightRequest="62">
                             <AbsoluteLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding OpenDetailCommand}" />
+                                <TapGestureRecognizer Command="{Binding BindingContext.OpenDetailCommand, Source={x:Reference page}}" />
                             </AbsoluteLayout.GestureRecognizers>
                             <Label Text="{Binding Name}" TextColor="White" AbsoluteLayout.LayoutFlags="YProportional" AbsoluteLayout.LayoutBounds="0,0,-1,-1" />
                             <Label Text="{Binding Date}" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1"/>
