@@ -15,5 +15,6 @@ namespace Balln.Constants
         public const string ArrowBack = "arrow_back";
 
         public const string ImageProfile = "profile_basketball";
+        public const string Logo = "logo_balln";
     }
 }
