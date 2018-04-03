@@ -48,7 +48,7 @@ namespace Balln.PageModels.Games
 
         public async void OpenDetail(object sender)
         {
-            await CoreMethods.PushPageModel<GameDetailPageModel>();
+            await CoreMethods.PushPageModel<GameDetailPageModel>(sender);
         }
 
         public async void AddNewGame(object sender)

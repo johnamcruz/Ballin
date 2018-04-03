@@ -32,7 +32,7 @@
                     <ViewCell>
                         <AbsoluteLayout Margin="16,10,10,10" HeightRequest="62">
                             <AbsoluteLayout.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding BindingContext.OpenDetailCommand, Source={x:Reference page}}" />
+                                <TapGestureRecognizer Command="{Binding BindingContext.OpenDetailCommand, Source={x:Reference page}}" CommandParameter="{Binding .}" />
                             </AbsoluteLayout.GestureRecognizers>
                             <Label Text="{Binding Name}" TextColor="White" AbsoluteLayout.LayoutFlags="YProportional" AbsoluteLayout.LayoutBounds="0,0,-1,-1" />
                             <Label Text="{Binding Date}" TextColor="{x:Static constants:Colors.Grey}" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1"/>

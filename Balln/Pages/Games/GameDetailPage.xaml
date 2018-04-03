@@ -2,7 +2,10 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
     x:Class="Balln.Pages.Games.GameDetailPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <Label Text="{Binding Game.Name}" TextColor="White" HorizontalTextAlignment="Center" Margin="0,5" />
+        <Label Text="{Binding Game.InvitedBy}" TextColor="{x:Static constants:Colors.Grey}" HorizontalTextAlignment="Center" Margin="0,0,0,10" />
+    </StackLayout>
 </ContentPage>
