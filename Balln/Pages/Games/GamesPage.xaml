@@ -5,6 +5,7 @@
     xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
     xmlns:controls="clr-namespace:Balln.Controls;assembly=Balln"
     x:Class="Balln.Pages.Games.GamesPage"
+    NavigationPage.TitleIcon="{x:Static constants:Images.Logo}"
     x:Name="page">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="{x:Static constants:Images.IconAdd}" Command="{Binding AddNewGameCommand}" />

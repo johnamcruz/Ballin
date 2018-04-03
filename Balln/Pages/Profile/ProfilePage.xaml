@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:constants="clr-namespace:Balln.Constants;assembly=Balln"
+    NavigationPage.TitleIcon="{x:Static constants:Images.Logo}"
     x:Class="Balln.Pages.Profile.ProfilePage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="{x:Static constants:Images.IconSettings}" Command="{Binding AddCommand}" />
