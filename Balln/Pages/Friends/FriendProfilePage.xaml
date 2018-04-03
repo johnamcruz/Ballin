@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:views="clr-namespace:Balln.Views;assembly=Balln"
     x:Class="Balln.Pages.Friends.FriendProfilePage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <views:ProfileView BindingContext="{Binding Profile}" />
 </ContentPage>

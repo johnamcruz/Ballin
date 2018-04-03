@@ -20,40 +20,40 @@ namespace Balln.PageModels.Friends
             {
                 new ProfileViewModel
                 {
+                    ProfileImage = Images.ImageProfile,
                     NickName = "johnamcruz",
-                    FullName = "John Cruz",
-                    ProfileImage = Images.ImageProfile
+                    FullName = "John Abram Cruz",
+                    GameType = "Recreational",
+                    Gender = "Male",
+                    HomeCourt = "Salt Lake District Park",
+                    HoursPlayed = "20:00 Hours",
                 },
                 new ProfileViewModel
                 {
+                    ProfileImage = Images.ImageProfile,
                     NickName = "johnamcruz",
-                    FullName = "John Cruz",
-                    ProfileImage = Images.ImageProfile
+                    FullName = "John Abram Cruz",
+                    GameType = "Recreational",
+                    Gender = "Male",
+                    HomeCourt = "Salt Lake District Park",
+                    HoursPlayed = "20:00 Hours",
                 },
                 new ProfileViewModel
                 {
+                    ProfileImage = Images.ImageProfile,
                     NickName = "johnamcruz",
-                    FullName = "John Cruz",
-                    ProfileImage = Images.ImageProfile
-                },
-                new ProfileViewModel
-                {
-                    NickName = "johnamcruz",
-                    FullName = "John Cruz",
-                    ProfileImage = Images.ImageProfile
-                },
-                new ProfileViewModel
-                {
-                    NickName = "johnamcruz",
-                    FullName = "John Cruz",
-                    ProfileImage = Images.ImageProfile
-                },
+                    FullName = "John Abram Cruz",
+                    GameType = "Recreational",
+                    Gender = "Male",
+                    HomeCourt = "Salt Lake District Park",
+                    HoursPlayed = "20:00 Hours",
+                }
             };
         }
 
         public async void OpenDetail(object sender)
         {
-            await CoreMethods.PushPageModel<FriendProfilePageModel>();
+            await CoreMethods.PushPageModel<FriendProfilePageModel>(sender);
         }
     }
 }
