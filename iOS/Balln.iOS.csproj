@@ -130,6 +130,7 @@
     <Compile Include="Renderers\CustomTabRenderer.cs" />
     <Compile Include="Extensions\ImageExtensions.cs" />
     <Compile Include="Renderers\CustomListViewRenderer.cs" />
+    <Compile Include="Renderers\ContentPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab_profile%402x.png" />

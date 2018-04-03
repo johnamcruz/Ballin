@@ -16,7 +16,14 @@ namespace Balln.iOS
 
             LoadApplication(new App());
 
+            SetUIAppearances();
+
             return base.FinishedLaunching(app, options);
+        }
+
+        private void SetUIAppearances()
+        {
+            UIBarButtonItem.Appearance.SetBackButtonTitlePositionAdjustment(new UIOffset(-200, 0), UIBarMetrics.Default);
         }
     }
 }

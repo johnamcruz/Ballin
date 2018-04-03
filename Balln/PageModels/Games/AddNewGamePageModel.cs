@@ -13,12 +13,12 @@ namespace Balln.PageModels.Games
 
         public async void CreateGame(object sender)
         {
-            await CoreMethods.PopPageModel();
+            await CoreMethods.PopPageModel(null, true);
         }
 
         public async void Cancel(object sender)
         {
-            await CoreMethods.PopPageModel();
+            await CoreMethods.PopPageModel(null, true);
         }
     }
 }
