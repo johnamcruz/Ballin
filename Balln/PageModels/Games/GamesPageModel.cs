@@ -24,6 +24,8 @@ namespace Balln.PageModels.Games
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
                     InvitedBy = "johnamcruz",
+                    Address = "1290 Aala St. Honolulu, HI 96817",
+                    Description = "Time hoop...",
                     GoingCount = 10,
                     MaybeCount = 2,
                     InvitedCount = 20
@@ -33,6 +35,8 @@ namespace Balln.PageModels.Games
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
                     InvitedBy = "johnamcruz",
+                    Address = "1290 Aala St. Honolulu, HI 96817",
+                    Description = "Time hoop...",
                     GoingCount = 10,
                     MaybeCount = 2,
                     InvitedCount = 20
@@ -42,6 +46,8 @@ namespace Balln.PageModels.Games
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
                     InvitedBy = "johnamcruz",
+                    Address = "1290 Aala St. Honolulu, HI 96817",
+                    Description = "Time hoop...",
                     GoingCount = 10,
                     MaybeCount = 2,
                     InvitedCount = 20
@@ -51,6 +57,8 @@ namespace Balln.PageModels.Games
                     Name = "McCully District Park",
                     Date = "Tues, 630pm",
                     InvitedBy = "johnamcruz",
+                    Address = "1290 Aala St. Honolulu, HI 96817",
+                    Description = "Time hoop...",
                     GoingCount = 10,
                     MaybeCount = 2,
                     InvitedCount = 20
