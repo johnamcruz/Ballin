@@ -4,6 +4,7 @@
     "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
     "NETStandard.Library": "2.0.1",
     "PropertyChanged.Fody": "2.3.0",
+    "System.Runtime": "4.3.0",
     "Xamarin.Forms": "2.5.0.280555"
   },
   "frameworks": {
